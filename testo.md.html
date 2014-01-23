@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>testo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1><p align=center>TortoiseGit</h1>
+<p>TortoiseGit è un client GUI free per la gestione delle versioni sul sistema Git; in particolare, gestisce i file nel corso del tempo che sono memorizzati in un <em>repository</em> locale. Ciò consente di recuperare versioni precedenti dei file ed esaminare la cronologia di come e quando i dati sono cambiati.</p>
+<p>Git è un <em>sistema di gestione di versione open source</em> progettato per gestire dai piccoli ai grandi progetti con velocità ed efficienza. </p>
+<p>Tutti i comandi Git sono disponibili dal menu contestuale di Explorer e TortoiseGit viene gestito attraverso un proprio sottomenu.</p>
+<p>Git fornisce a ogni sviluppatore una copia locale di tutta la history dello sviluppo e le modifiche vengono copiate da un repository ad un altro. Questi cambiamenti sono importati come ulteriori rami di sviluppo (development branches), e possono essere fuse nello stesso modo come un development branch locale. I repositories sono facilmente accessibili tramite il protocollo Git (contenuto in ssh per l'autenticazione e la sicurezza) o semplicemente utilizzando http.</p>
+<h1>Installazione TortoiseGit e utilizzo con GitHub</h1>
+<p>E’ necessario scaricare il file di installazione al seguente link: <a href="https://code.google.com/p/tortoisegit/wiki/Download">https://code.google.com/p/tortoisegit/wiki/Download</a>. E’ possibile scaricare anche il language package in Italiano.</p>
+<p>Prima di iniziare a configurare un progetto su GitHub, è necessario creare delle key con “Puttygen”</p>
+<p><p align=center><img src="http://i41.tinypic.com/wgtb7.png" /></p>
+<ul>
+<li>selezionare “Generate”</li>
+<li>salvare la private key e public key nella cartella .ssh presente al percorso C:\Users\nomexxx (nel caso in cui la cartella non è presente, crearla da linea di comando con il comando mkdir .ssh)</li>
+<li>selezionare e copiare l’ssh key</li>
+</ul>
+<p><p align=center><img src="http://i41.tinypic.com/2exvevb.png" /></p>
+<ul>
+<li>andare su <a href="https://github.com/">https://github.com/</a> e selezionare account setting</li>
+</ul>
+<p><p align=center><img src="http://i41.tinypic.com/fv8hlv.png" /></p>
+<ul>
+<li>nel menù di sinistra selezionare “SSH Keys”</li>
+<li>aggiungere la key inserendo un titolo e l’ssh key</li>
+</ul>
+<p><p align=center><img src="http://i44.tinypic.com/28byzgi.png" /></p>
+<p>Adesso è necessario creare un progetto attraverso Eclipse o Android Studio. Per caricare un repository su GitHub è necessario cliccare con il destro sul package del progetto e selezionare “Git Create repository here”.</p>
+<p><p align=center><img src="http://i43.tinypic.com/vr3vcp.png" /></p>
+<p>Uscirà una schermata come la seguente, in cui è necessario cliccare su Ok.</p>
+<p><p align=center><img src="http://i43.tinypic.com/33jk1s5.png" /></p>
+<p>In questo modo si è creato un repository vuoto. 
+Per fare il commit sarà necessario: </p>
+<ul>
+<li>cliccare di nuovo con il tasto destro sul package del progetto</li>
+<li>selezionare “Git Commit -&gt;”master”…”</li>
+<li>selezionare i file relative alla sezione “Modifiche effettuate” </li>
+<li>inserire un messaggio di commit e premere Ok</li>
+<li>Premere Close</li>
+</ul>
+<p>Per sincronizzare su git sarà necessario:</p>
+<ul>
+<li>cliccare di nuovo con il tasto destro sul package del progetto</li>
+<li>selezionare “Git Sync..”</li>
+</ul>
+<p>si aprirà una nuova schermata in cui sarà necessario inserire l’URL del repository su GitHub.</p>
+<p><p align=center><img src="http://i42.tinypic.com/286zgub.png" /></p>
+<p>Per fare ciò, sarà necessario creare un nuovo repository su GitHub, copiare l’SSH</p>
+<p><p align=center><img src="http://i39.tinypic.com/264rl85.png" /></p>
+<p>e inserirlo in Remote URL
+<p align=center><img src="http://i41.tinypic.com/30cpu39.png" /></p>
+<p>Aprire Pageant dalla directory di TortoiseGit</p>
+<p><p align=center><img src="http://i41.tinypic.com/wvsdw6.png" /></p>
+<ul>
+<li>aggiungere la private key creata precedentemente e premere Close</li>
+<li>tornare alla schermata precedente e premere push</li>
+</ul>
+<p>(BUG: inizialmente non trova “master” per il ramo locale. Bisogna cliccare su “…” e aggiungerlo manualmente)</p>
+<p><p align=center><img src="http://i43.tinypic.com/2m3peur.png" /></p>
+<p>Ora il progetto è stato sincronizzato su GitHub:</p>
+<p><p align=center><img src="http://i40.tinypic.com/mt1yo.png" /></p>
+<p>Ogni volta che si modificano dei file, è necessario effettuare il commit e la sincronizzazione su git.
+Per configurare l’autenticazione con un repository su GitHub, è utile la seguente guida online: <a href="https://www.youtube.com/watch?v=fNPLuJTTto0">https://www.youtube.com/watch?v=fNPLuJTTto0</a></p>
+<p>E’ possibile clonare con repository su Git. Bisogna selezionare “Git Clone..” e si aprirà una finestra di dialogo come la seguente immagine. </p>
+<p><p align=center><img src="http://i39.tinypic.com/rifeba.png" /></p>
+<p>Url: Inserire l'indirizzo URL del repository da cui si deve clonare. È possibile fare clic su <strong>Sfoglia</strong> per navigare fino alla directory.</p>
+<p>Directory: Inserisci la directory locale. È possibile fare clic su <strong>Sfoglia</strong> per navigare fino alla directory.
+ </p>
+<p>La seguente immagine presenta i comandi che è possibile effettuare utilizzando TortoiseGit:</p>
+<p><p align=center><img src="http://i39.tinypic.com/2nc2brs.png" /></p>
+<ul>
+<li>Switch/Checkout: Per ottenere uno special version working tree è necessario fare un checkout da un repository locale. Se si seleziona Force sovrascriverà il working tree sulla versione del repository.  Se si seleziona Tag o Commit , si preferisce creare un nuovo ramo, altrimenti si lavorerà al &quot;no branch”.</li>
+<li>Check for modifications: è utile prima del commit, per verificare quali file sono stati modificati localmente.</li>
+<li>Fetch: si può fare in qualsiasi momento e serve ad aggiornare la copia locale in un branch remoto, senza effettuare il merge. Questo permette di rivedere le modifiche  prima di integrarle nella copia del progetto.</li>
+<li>Pull: unisce le modifiche del branch remoto e branch locale facendo il merge.</li>
+<li>Push: sovrascrive le modifiche dal repository locale a quello remoto. </li>
+<li>Merge: permette di fare il merge tra due rami di sviluppo.</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
