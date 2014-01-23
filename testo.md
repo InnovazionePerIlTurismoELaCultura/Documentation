@@ -1,4 +1,4 @@
-<p align=center>TortoiseGit
+<center>TortoiseGit
 ===========
 
 TortoiseGit è un client GUI free per la gestione delle versioni sul sistema Git; in particolare, gestisce i file nel corso del tempo che sono memorizzati in un *repository* locale. Ciò consente di recuperare versioni precedenti dei file ed esaminare la cronologia di come e quando i dati sono cambiati.
