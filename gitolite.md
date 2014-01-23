@@ -5,7 +5,7 @@ Gitolite viene usato per l'hosting remoto di repositories git.  Uitlizza SSH per
 
 #0. Installazione
 
-Se siete interessati all'installazione potete dare un'occhiata qui: 
+Se siete interessati all'installazione potete dare un'occhiata al paragrafo 3 dei riferimenti.
 
 #1. Prima configurazione
 L'installazione prevede la creazione di un utente "gitolite" nel sistema linux (su CentOS l'utente è *gitolite*, se l'installazione è avvenuta manualmente, probabilmente l'avrete chiamato *git*). Su CentOS, la home dell'utente *gitolite* è accessibile al seguente path:
@@ -64,9 +64,77 @@ Dopo la clonazione:
 
     cd gitolite-admin
 
-nella directory sono presenti due sotto-directory: */conf* e */keydir*:
+nella directory sono presenti due sotto-directory: *"/conf"* e *"/keydir"*:
 
 - Nella cartella */conf* è presente un unico file *gitolite.conf* che è il file di configurazione di gitolite. 
+- Nella cartella */keydir* ci sono invece le chiavi pubbliche degli utenti che hanno l'accesso ai repository di gitolite.
 
+##2.1 Creazione dei repository remoti
+Per creare un repository sulla macchina remota, effettuare queste operazioni sulla macchina locale (dove è stato clonato il repository di amministrazione):
 
-    
+- Aprire il file *gitolite.conf* con il proprio editor preferito che appararià più o meno così:
+
+        repo    gitolite-admin
+                RW+     =   admin
+        repo    testing
+                RW+     =   @all
+
+- Assumendo che vogliamo creare il repository *"backend"* modifichiamo il file in questo modo:
+
+        repo    gitolite-admin
+                RW+     =   admin
+        repo    testing
+                RW+     =   @all
+        repo    backend.git
+                RW+     =   admin
+
+- In questo modo abbiamo specificato che gitolite dovrà creare un repository con nome *"backend"* che avrà un'unico utente chiamato *admin* che avrà accesso completo al repository (lettura,scrittura).
+
+- Salviamo il file e, sempre in locale, diamo i seguenti comandi:
+
+        [user@localhost ~/gitolite-admin] git add -A
+        [user@localhost ~/gitolite-admin] git commit -m "Creato repository backend"
+        [user@localhost ~/gitolite-admin] git push origin master
+
+Una volta fatto il commit sul repository remoto, gitolite ci confermerà la creazione del repository e non resta che clonarlo ed effettuare il primo commit.
+
+##2.2 Gestione dei permessi degli utenti
+
+Supponiamo di voler dare l'accesso in sola lettura al repository *"backend"* all'utente *luca*:
+
+- Chiediamo a Luca di generare la chiave RSA (così com abbiamo fatto per l'utente *admin*) e di inviarci la parte publica (in genere il file *id_rsa.pub*)
+- Una volta ottenuta la chiave, copiamo il file sulla macchina dove abbiamo clonato il repository di amministrazione, più precisamente nella cartella:
+
+        ~/gitolite-admin/keydir
+
+- considerando che il nome che daremo al file servirà ad indentificare l'utente nel file di configurazione, rinominiamo il file in questo modo:
+
+        [user@localhost ~/gitolite-admin/keydir] mv id_rsa.pub luca.pub
+
+- Modifichiamo il file *gitolite.conf* in questo modo:
+
+        repo    gitolite-admin
+                RW+     =   admin
+        repo    testing
+                RW+     =   @all
+        repo    backend.git
+                RW+     =   admin
+                R       =   luca
+
+- Facciamo il commit dei cambiamenti ed effettuiamo il push sul server che hosta i repository:
+
+        [user@localhost ~/gitolite-admin] git add -A
+        [user@localhost ~/gitolite-admin] git commit -m "Aggiunto utente luca al repository backend in sola lettura"
+        [user@localhost ~/gitolite-admin] git push origin master
+
+- da questo momento in poi, Luca potrà clonare il repository in locale in questo modo:
+
+        [luca@lucamachine] git clone gitolite@ipaddress:backend.git
+
+     dove *"ipaddress"* è l'indirizzo ip (o l'hostname) della macchina dove gira gitolite.
+
+#3 Riferimenti tecnici
+
+[Gitolite documentation](http://www.google.com)
+
+[Installazione e configurazione su CentoOS 6.4](http://sachinsharm.wordpress.com/2013/10/04/installsetup-and-configure-git-server-with-gitolite-and-gitweb-on-centosrhel-6-4/)
