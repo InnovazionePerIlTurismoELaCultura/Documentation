@@ -5,7 +5,7 @@ Gitolite viene usato per l'hosting remoto di repositories git.  Uitlizza SSH per
 
 #0. Installazione
 
-Se siete interessati all'installazione potete dare un'occhiata qui: 
+Se siete interessati all'installazione potete dare un'occhiata al paragrafo 3 dei riferimenti.
 
 #1. Prima configurazione
 L'installazione prevede la creazione di un utente "gitolite" nel sistema linux (su CentOS l'utente è *gitolite*, se l'installazione è avvenuta manualmente, probabilmente l'avrete chiamato *git*). Su CentOS, la home dell'utente *gitolite* è accessibile al seguente path:
