@@ -9,7 +9,7 @@ Tutti i comandi Git sono disponibili dal menu contestuale di Explorer e Tortoise
 
 Git fornisce a ogni sviluppatore una copia locale di tutta la history dello sviluppo e le modifiche vengono copiate da un repository ad un altro. Questi cambiamenti sono importati come ulteriori rami di sviluppo (development branches), e possono essere fuse nello stesso modo come un development branch locale. I repositories sono facilmente accessibili tramite il protocollo Git (contenuto in ssh per l'autenticazione e la sicurezza) o semplicemente utilizzando http.
 
-Installazione TortoiseGit e utilizzo con GitHub
+Installazione TortoiseGit e configurazione con GitHub
 ================================================
 
 E’ necessario scaricare il file di installazione al seguente link: <https://code.google.com/p/tortoisegit/wiki/Download>. E’ possibile scaricare anche il language package in Italiano.
