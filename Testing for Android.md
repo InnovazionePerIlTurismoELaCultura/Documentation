@@ -10,9 +10,9 @@ Il testing è un processo utilizzato per individuare l’affidabilità, la compl
 - Test del sistema
  
 
-<center>
+<p align=center>
 ![](https://github.com/MartinaMunno/Documentation/blob/master/Image/1.png?raw=true)
-</center>
+
 
 <h3>Unit test</h3>
 Per unit test si intende l’attività di testing effettuata su singole unità del software dotate di comportamento autonomo, che possono essere delle specifiche funzioni o singole classi. Per l’unit test è necessaria la scrittura di driver e stub. Il driver simula un'unità chiamante mentre lo stub simula un'unità chiamata. L'investimento di tempo necessario per questa attività talvolta fa sì che venga ridotto il livello di priorità del test di unità e, quasi sempre, ciò si rivela un errore. Infatti, sebbene lo sviluppo di driver e stub costi in termini di tempo e denaro, il test di unità offre alcuni vantaggi, come l'automazione del processo di test, riduce le difficoltà di rilevamento degli errori contenuti in parti più complesse dell'applicazione e spesso viene ottenuta una maggiore copertura di tutti gli aspetti da verificare, poiché l'attenzione viene posta sulle singole unità. I driver e gli stub possono essere riutilizzati per eseguire frequentemente test sulle continue modifiche che si verificano nel ciclo di sviluppo, senza tuttavia generare altro codice per il test. In questo modo si riduce il rapporto costi/benefici della scrittura di driver e stub e si è in grado di gestire meglio il costo di test ripetuti.
@@ -44,9 +44,9 @@ La piattaforma Android integra il framework JUnit 3.0, ma vi sono altri vari str
 Il test di integrazione rappresenta l'estensione logica del test di unità. Il tipo più semplice di test di integrazione consiste nella combinazione di due unità già sottoposte a test in un solo componente e nel test dell'interfaccia presente tra le due. In questo caso, per componente si intende l'aggregazione integrata di più unità. In uno scenario realistico più unità vengono combinate in componenti che, a loro volta, vengono aggregati in parti più grandi del programma. Il concetto che è alla base di questo approccio consiste nell'esecuzione del test delle combinazioni di parti ed nell'espansione del processo al test dei moduli di un gruppo con quelli di altri gruppi. Alla fine, tutti i moduli che compongono un processo vengono sottoposti al test contemporaneamente. Questo metodo consente di ridurre notevolmente il numero di possibilità e di semplificare in larga misura l'analisi.
 In Android, il test di integrazione spesso comporta il controllo di componenti Android come i testing sui servizi, sulle activity o sui Content Provider. La documentazione ufficiale di Android tende a concentrarsi su test basati sul AndroidTestCase e le sue sottoclassi, ma in realtà vi sono molti framework che permettono di condurre test di integrazione per Android come Roboelectric, Robotium (visti precedentemente) e Troyd, framework utile per generare test basati su scenari attraverso comandi tester e un'interfaccia a riga di comando.
  
-<center>
+<p align=center>
 ![](https://github.com/MartinaMunno/Documentation/blob/master/Image/2.PNG?raw=true)
-</center>
+
 
 <h3>Test operativo</h3>
 Il testing operativo permette di valutare un'applicazione software prima della fase di produzione, verificando il prodotto dal punto di vista delle funzionalità. In Android, FitNesse è un framework open-source che consente ai clienti, tester e programmatori di imparare ciò che il programma dovrebbe fare , e di confrontare automaticamente con ciò che effettivamente deve fare. Esso mette a confronto le aspettative dei clienti ai risultati effettivi.
