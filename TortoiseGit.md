@@ -16,35 +16,35 @@ E’ necessario scaricare il file di installazione al seguente link: <https://co
 
 Prima di iniziare a configurare un progetto su GitHub, è necessario creare delle key con “Puttygen”
 
-<p align=center>![](http://i41.tinypic.com/wgtb7.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t1.png?raw=true)
 
  
 *	selezionare “Generate”
 *	salvare la private key e public key nella cartella .ssh presente al percorso C:\Users\nomexxx (nel caso in cui la cartella non è presente, crearla da linea di comando con il comando mkdir .ssh)
 *	selezionare e copiare l’ssh key
  
-<p align=center>![](http://i41.tinypic.com/2exvevb.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t2.png?raw=true)
 
 
 *	andare su <https://github.com/> e selezionare account setting
 
-<p align=center>![](http://i41.tinypic.com/fv8hlv.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t3.PNG?raw=true)
  
 *	nel menù di sinistra selezionare “SSH Keys”
 *	aggiungere la key inserendo un titolo e l’ssh key
  
-<p align=center>![](http://i44.tinypic.com/28byzgi.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t4.png?raw=true)
 
 
 
 Adesso è necessario creare un progetto attraverso Eclipse o Android Studio. Per caricare un repository su GitHub è necessario cliccare con il destro sul package del progetto e selezionare “Git Create repository here”.
 
-<p align=center>![](http://i43.tinypic.com/vr3vcp.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t5.png?raw=true)
 
  
 Uscirà una schermata come la seguente, in cui è necessario cliccare su Ok.
 
-<p align=center>![](http://i43.tinypic.com/33jk1s5.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t6.png?raw=true)
 
  
 In questo modo si è creato un repository vuoto. 
@@ -63,22 +63,22 @@ Per sincronizzare su git sarà necessario:
 
 si aprirà una nuova schermata in cui sarà necessario inserire l’URL del repository su GitHub.
  
-<p align=center>![](http://i42.tinypic.com/286zgub.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t7.png?raw=true)
 
 
 Per fare ciò, sarà necessario creare un nuovo repository su GitHub, copiare l’SSH
  
-<p align=center>![](http://i39.tinypic.com/264rl85.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t8.png?raw=true)
 
 e inserirlo in Remote URL
-<p align=center>![](http://i41.tinypic.com/30cpu39.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t9.PNG?raw=true)
 
  
 
 Aprire Pageant dalla directory di TortoiseGit
  
 
-<p align=center>![](http://i41.tinypic.com/wvsdw6.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t10.png?raw=true)
 
 *	aggiungere la private key creata precedentemente e premere Close
 *	tornare alla schermata precedente e premere push
@@ -86,14 +86,14 @@ Aprire Pageant dalla directory di TortoiseGit
 (BUG: inizialmente non trova “master” per il ramo locale. Bisogna cliccare su “…” e aggiungerlo manualmente)
 
 
-<p align=center>![](http://i43.tinypic.com/2m3peur.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t11.png?raw=true)
 
  
 Ora il progetto è stato sincronizzato su GitHub:
  
 
 
-<p align=center>![](http://i40.tinypic.com/mt1yo.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t12.png?raw=true)
 
 Ogni volta che si modificano dei file, è necessario effettuare il commit e la sincronizzazione su git.
 Per configurare l’autenticazione con un repository su GitHub, è utile la seguente guida online: <https://www.youtube.com/watch?v=fNPLuJTTto0>
@@ -101,7 +101,7 @@ Per configurare l’autenticazione con un repository su GitHub, è utile la segu
 E’ possibile clonare con repository su Git. Bisogna selezionare “Git Clone..” e si aprirà una finestra di dialogo come la seguente immagine. 
  
 
-<p align=center>![](http://i39.tinypic.com/rifeba.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t13.png?raw=true)
 
 
 Url: Inserire l'indirizzo URL del repository da cui si deve clonare. È possibile fare clic su **Sfoglia** per navigare fino alla directory.
@@ -113,7 +113,7 @@ Directory: Inserisci la directory locale. È possibile fare clic su **Sfoglia** 
 La seguente immagine presenta i comandi che è possibile effettuare utilizzando TortoiseGit:
 
 
-<p align=center>![](http://i39.tinypic.com/2nc2brs.png)
+<p align=center>![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/t14.png?raw=true)
 
  
 *	Switch/Checkout: Per ottenere uno special version working tree è necessario fare un checkout da un repository locale. Se si seleziona Force sovrascriverà il working tree sulla versione del repository.  Se si seleziona Tag o Commit , si preferisce creare un nuovo ramo, altrimenti si lavorerà al "no branch”.
