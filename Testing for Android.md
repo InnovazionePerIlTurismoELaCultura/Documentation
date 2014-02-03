@@ -11,7 +11,7 @@ Il testing è un processo utilizzato per individuare l’affidabilità, la compl
  
 
 <p align=center>
-![](https://github.com/MartinaMunno/Documentation/blob/master/Image/1.png?raw=true)
+![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/1.png?raw=true)
 
 
 <h3>Unit test</h3>
@@ -45,7 +45,7 @@ Il test di integrazione rappresenta l'estensione logica del test di unità. Il t
 In Android, il test di integrazione spesso comporta il controllo di componenti Android come i testing sui servizi, sulle activity o sui Content Provider. La documentazione ufficiale di Android tende a concentrarsi su test basati sul AndroidTestCase e le sue sottoclassi, ma in realtà vi sono molti framework che permettono di condurre test di integrazione per Android come Roboelectric, Robotium (visti precedentemente) e Troyd, framework utile per generare test basati su scenari attraverso comandi tester e un'interfaccia a riga di comando.
  
 <p align=center>
-![](https://github.com/MartinaMunno/Documentation/blob/master/Image/2.PNG?raw=true)
+![](https://github.com/MartinaMunno/Documenti-personali/blob/master/Image/2.PNG?raw=true)
 
 
 <h3>Test operativo</h3>
