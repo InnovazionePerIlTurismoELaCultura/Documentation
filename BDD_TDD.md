@@ -19,7 +19,7 @@ I colori "rosso" e "verde" si riferiscono alla rappresentazione grafica di falli
 
 
 
-## Behavioural-driven development (BDD) ## 
+## Behavioural-driven development (BDD)##
 
 
 BDD rappresenta una sintesi e un perfezionamento delle pratiche derivanti dalla TDD (Test Driven Development) e ATDD (Acceptance Test Driven Development) attuando le seguenti operazioni:
