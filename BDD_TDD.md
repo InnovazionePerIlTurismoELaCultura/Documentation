@@ -10,8 +10,9 @@ Il processo si articola sulla ripetizione di brevi cicli di sviluppo e collaudo 
 I colori "rosso" e "verde" si riferiscono alla rappresentazione grafica di fallimento e successo di un test automatico più diffusa negli IDE.
 
 
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD.jpg)
 
-<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD.jpg?raw=true)
+
 
 
 
@@ -65,7 +66,9 @@ Il formato di ogni storia è il seguente:
 
 1. 	In order to  (beneficio)
 2.	As                (cosa l’utente sta sviluppando)
-3.	I want          (caratteristica)
+3.	I want          (caratteristica)  
+
+
 	
 Questa descrizione è seguita da un elenco di scenari:
 
@@ -76,9 +79,68 @@ Questa descrizione è seguita da un elenco di scenari:
 
 <p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/Plain_Text.jpg?raw=true)
 
+Dato un qualche contesto iniziale "given"   
+-> Quando accade qualcosa "when"     
+-> allora assicurati che succeda qualcos'altro "then"  
+
 A questo punto occorre:  
 -	Scoprire la  feature più importante  
 -	All’interno della funzione selezionare lo scenario più rilevante per l’utente.
-La seguente immagine illustra un diagramma di attività UML che mostra come ATDD e sviluppatore TDD possono lavorare insieme. Idealmente, si può scrivere un singolo test di accettazione, poi per l'attuazione del codice di produzione necessario per adempiere a tale prova prendo un approccio di sviluppo TDD. Questo a sua volta richiede di iterare più volte attraverso la scrittura di un test, del codice di produzione. 
+La seguente immagine illustra un diagramma di attività UML che mostra come ATDD e sviluppatore TDD possono lavorare insieme. Idealmente, si può scrivere un singolo test di accettazione, poi per l'attuazione del codice di produzione necessario per adempiere a tale prova prendo un approccio di sviluppo TDD. Questo a sua volta richiede di iterare più volte attraverso la scrittura di un test, del codice di produzione.   
  
-<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD_BDD.jpg?raw=true)
+
+  
+  
+  
+  
+
+**<p align=center>Esempio del funzionamento di un bancomat**  
+
+
+**Titolo: un cliente preleva del denaro**  
+Come cliente voglio poter prelevare del contante dal bancomat
+in modo da poter evitare la fila alla banca.  
+Vari scenari da prendere in considerazione:   
+
+- il conto potrebbe avere del credito 
+- il conto potrebbe essere scoperto ma entro i limiti di scoperto  
+- il conto potrebbe essere scoperto e fuori dai limiti.
+- il conto è in attivo, ma la richiesta di prelievo è così alta da portarlo allo scoperto
+- il conto è in attivo, ma l'erogatore privo di sufficiente contante.
+
+Ricorrendo al modello “Dato…quando…allora…” (given-when-then) i primi due scenari apparirebbero così:
+
+**Scenario 1:** Il conto è in attivo  
+Dato un conto corrente in attivo  
+E una carta valida  
+E dato un bancomat con sufficiente contante  
+Quando il cliente esegue un prelievo  
+Allora il contante viene addebitato sul conto  
+E il denaro viene erogato  
+
+**Scenario 2:** Il conto è scoperto oltre i limiti consentiti
+Dato un conto scoperto  
+Ed una carta valida  
+Quando il cliente richiede un prelievo  
+Allora un messaggio di rifiuto viene visualizzato  
+E il denaro non viene erogato  
+E la carta viene restituita.  
+
+**<p align=center>Esempio del funzionamento di un login** 
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/scenario1.jpg?raw=true)   
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/scenario1_2.jpg?raw=true)  
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/scenario1_3.jpg?raw=true)  
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/scenario2.jpg?raw=true)  
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/scenario2_1.jpg?raw=true)  
+
+
+
+
+
+
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD_BDD.jpg?raw=true)  
