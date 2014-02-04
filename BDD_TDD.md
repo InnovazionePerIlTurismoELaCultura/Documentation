@@ -10,7 +10,7 @@ Il processo si articola sulla ripetizione di brevi cicli di sviluppo e collaudo 
 I colori "rosso" e "verde" si riferiscono alla rappresentazione grafica di fallimento e successo di un test automatico più diffusa negli IDE.
 
 
-<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD.jpg)
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/TDD.jpg?raw=true)
 
 
 
@@ -77,7 +77,7 @@ Questa descrizione è seguita da un elenco di scenari:
 2.	When (azioni dell’utente)
 3.	Then (risultato atteso dall’utente)
 
-<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/Plain_Text.jpg?raw=true)
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/Plain_Text.jpg?raw=true)?raw=true
 
 Dato un qualche contesto iniziale "given"   
 -> Quando accade qualcosa "when"     
