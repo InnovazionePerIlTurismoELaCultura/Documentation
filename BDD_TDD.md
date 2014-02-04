@@ -77,7 +77,7 @@ Questa descrizione è seguita da un elenco di scenari:
 2.	When (azioni dell’utente)
 3.	Then (risultato atteso dall’utente)
 
-<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/Plain_Text.jpg?raw=true)?raw=true
+<p align=center>![](https://github.com/InnovazionePerIlTurismoELaCultura/Documentation/blob/master/Image/Plain_Text.jpg?raw=true)
 
 Dato un qualche contesto iniziale "given"   
 -> Quando accade qualcosa "when"     
